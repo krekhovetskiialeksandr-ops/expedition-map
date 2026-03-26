@@ -1,178 +1,93 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #3874c0; -webkit-text-stroke: #3874c0}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #7cc8fd; -webkit-text-stroke: #7cc8fd}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #b36a52; -webkit-text-stroke: #b36a52}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #bebebe; -webkit-text-stroke: #bebebe}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #5a6065; -webkit-text-stroke: #5a6065}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #bebebe; -webkit-text-stroke: #bebebe; min-height: 16.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #61b670; -webkit-text-stroke: #61b670}
-    span.s1 {font-kerning: none; background-color: #121313}
-    span.s2 {font-kerning: none; color: #7cc8fd; background-color: #121313; -webkit-text-stroke: 0px #7cc8fd}
-    span.s3 {font-kerning: none; color: #5a5a5a; background-color: #121313; -webkit-text-stroke: 0px #5a5a5a}
-    span.s4 {font-kerning: none; color: #bebebe; background-color: #121313; -webkit-text-stroke: 0px #bebebe}
-    span.s5 {font-kerning: none; color: #b36a52; background-color: #121313; -webkit-text-stroke: 0px #b36a52}
-    span.s6 {font-kerning: none; color: #3874c0; background-color: #121313; -webkit-text-stroke: 0px #3874c0}
-    span.s7 {font-kerning: none; color: #cacaca; background-color: #121313; -webkit-text-stroke: 0px #cacaca}
-    span.s8 {font-kerning: none; color: #61b670; background-color: #121313; -webkit-text-stroke: 0px #61b670}
-    span.s9 {font-kerning: none; color: #97bb86; background-color: #121313; -webkit-text-stroke: 0px #97bb86}
-    span.s10 {font-kerning: none; color: #a651f5; background-color: #121313; -webkit-text-stroke: 0px #a651f5}
-    span.s11 {font: 14.0px 'Apple Color Emoji'; font-kerning: none; background-color: #121313}
-    span.s12 {font-kerning: none}
-    span.s13 {font-kerning: none; color: #30b68f; background-color: #121313; -webkit-text-stroke: 0px #30b68f}
-    span.s14 {font-kerning: none; color: #f16625; background-color: #121313; -webkit-text-stroke: 0px #f16625}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Экспедиция 2026</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        :root {
+            --tg-theme-bg-color: #1c1c1c;
+            --tg-theme-button-color: #0088cc;
+            --tg-theme-button-text-color: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--tg-theme-bg-color);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container { padding: 20px; }
+        .btn {
+            background-color: var(--tg-theme-button-color);
+            color: var(--tg-theme-button-text-color);
+            border: none;
+            padding: 18px 36px;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .status { margin-top: 25px; font-size: 14px; color: #888; }
+    </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;</span><span class="s1">html</span><span class="s4"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s5">"ru"</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s5">"UTF-8"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">title</span><span class="s3">&gt;</span><span class="s1">GPS Экспедиция 2026</span><span class="s3">&lt;/</span><span class="s6">title</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Подключаем официальную библиотеку Telegram Web App --&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://telegram.org/js/telegram-web-app.js"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">:root</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">--tg-theme-bg-color:</span><span class="s1"> #1c1c1c</span><span class="s7">;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">--tg-theme-button-color:</span><span class="s4"> #0088cc</span><span class="s7">;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">--tg-theme-button-text-color:</span><span class="s4"> #ffffff</span><span class="s7">;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">--tg-theme-hint-color:</span><span class="s4"> #888888</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">body</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s4"> </span><span class="s1">-apple-system</span><span class="s7">,</span><span class="s4"> </span><span class="s1">BlinkMacSystemFont</span><span class="s7">,</span><span class="s4"> </span><span class="s8">"Segoe UI"</span><span class="s7">,</span><span class="s4"> </span><span class="s1">Roboto</span><span class="s7">,</span><span class="s4"> </span><span class="s1">Helvetica</span><span class="s7">,</span><span class="s4"> </span><span class="s1">Arial</span><span class="s7">,</span><span class="s4"> </span><span class="s1">sans-serif</span><span class="s7">;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s4"> </span><span class="s1">var(--tg-theme-bg-color)</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s5">white</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">display:</span><span class="s1"> </span><span class="s5">flex</span><span class="s7">;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">flex-direction:</span><span class="s4"> </span><span class="s5">column</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">align-items:</span><span class="s1"> </span><span class="s5">center</span><span class="s7">;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">justify-content:</span><span class="s4"> </span><span class="s5">center</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">height:</span><span class="s1"> </span><span class="s9">100vh</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin:</span><span class="s1"> </span><span class="s9">0</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">overflow:</span><span class="s1"> </span><span class="s5">hidden</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.container</span><span class="s4"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">text-align:</span><span class="s1"> </span><span class="s5">center</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s9">20px</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s9">90%</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">max-width:</span><span class="s1"> </span><span class="s9">400px</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">.icon</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-size:</span><span class="s1"> </span><span class="s9">80px</span><span class="s7">;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">margin-bottom:</span><span class="s4"> </span><span class="s9">30px</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">animation:</span><span class="s1"> </span><span class="s5">pulse</span><span class="s1"> </span><span class="s9">2s</span><span class="s1"> </span><span class="s5">infinite</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s10">@keyframes</span><span class="s1"> </span><span class="s5">pulse</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">0%</span><span class="s1"> </span><span class="s7">{</span><span class="s1"> </span><span class="s2">transform:</span><span class="s1"> </span><span class="s5">scale(</span><span class="s9">1</span><span class="s5">)</span><span class="s7">;</span><span class="s1"> </span><span class="s2">opacity:</span><span class="s1"> </span><span class="s9">0.8</span><span class="s7">;</span><span class="s1"> </span><span class="s7">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">50%</span><span class="s1"> </span><span class="s7">{</span><span class="s1"> </span><span class="s2">transform:</span><span class="s1"> </span><span class="s5">scale(</span><span class="s9">1.1</span><span class="s5">)</span><span class="s7">;</span><span class="s1"> </span><span class="s2">opacity:</span><span class="s1"> </span><span class="s9">1</span><span class="s7">;</span><span class="s1"> </span><span class="s7">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">100%</span><span class="s1"> </span><span class="s7">{</span><span class="s1"> </span><span class="s2">transform:</span><span class="s1"> </span><span class="s5">scale(</span><span class="s9">1</span><span class="s5">)</span><span class="s7">;</span><span class="s1"> </span><span class="s2">opacity:</span><span class="s1"> </span><span class="s9">0.8</span><span class="s7">;</span><span class="s1"> </span><span class="s7">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">.btn</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s4"> </span><span class="s1">var(--tg-theme-button-color)</span><span class="s7">;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s4"> </span><span class="s1">var(--tg-theme-button-text-color)</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s5">none</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s9">20px</span><span class="s7">;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">border-radius:</span><span class="s4"> </span><span class="s9">16px</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-size:</span><span class="s1"> </span><span class="s9">20px</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-weight:</span><span class="s1"> </span><span class="s5">bold</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">cursor:</span><span class="s1"> </span><span class="s5">pointer</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s9">100%</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s9">0</span><span class="s1"> </span><span class="s9">4px</span><span class="s1"> </span><span class="s9">15px</span><span class="s1"> </span><span class="s5">rgba(</span><span class="s9">0</span><span class="s7">,</span><span class="s1"> </span><span class="s9">136</span><span class="s7">,</span><span class="s1"> </span><span class="s9">204</span><span class="s7">,</span><span class="s1"> </span><span class="s9">0.3</span><span class="s5">)</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s1"> </span><span class="s5">all</span><span class="s1"> </span><span class="s9">0.2s</span><span class="s1"> </span><span class="s5">ease</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.btn:active</span><span class="s4"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transform:</span><span class="s1"> </span><span class="s5">scale(</span><span class="s9">0.96</span><span class="s5">)</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.btn:disabled</span><span class="s4"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s1"> #444</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s5">none</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">.status</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-top:</span><span class="s1"> </span><span class="s9">30px</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-size:</span><span class="s1"> </span><span class="s9">16px</span><span class="s7">;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s4"> </span><span class="s1">var(--tg-theme-hint-color)</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">line-height:</span><span class="s1"> </span><span class="s9">1.4</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;</span><span class="s1">body</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"container"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"icon"</span><span class="s3">&gt;</span><span class="s11">🛰</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">h1</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"title"</span><span class="s3">&gt;</span><span class="s1">Экспедиция 2026</span><span class="s3">&lt;/</span><span class="s6">h1</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"status"</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"status"</span><span class="s3">&gt;</span><span class="s1">Нажмите кнопку, чтобы зафиксировать ваше местоположение и отправить его в базу данных экспедиции.</span><span class="s3">&lt;/</span><span class="s6">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">button</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"btn"</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"sendBtn"</span><span class="s3">&gt;</span><span class="s1">ОТМЕТИТЬСЯ</span><span class="s3">&lt;/</span><span class="s6">button</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s12"></span><br></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s10">const</span><span class="s1"> tg </span><span class="s7">=</span><span class="s1"> window</span><span class="s7">.</span><span class="s13">Telegram</span><span class="s7">.</span><span class="s13">WebApp</span><span class="s7">;</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">        </span>tg</span><span class="s7">.</span><span class="s4">expand</span><span class="s7">();</span><span class="s4"> </span><span class="s1">// Раскрываем приложение на весь экран</span></p>
-<p class="p6"><span class="s12"></span><br></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// ВНИМАНИЕ: Замени этот URL на свой адрес Webhook из n8n (Шаг 1)</span></p>
-<p class="p7"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s10">const</span><span class="s4"> </span><span class="s13">WEBHOOK_URL</span><span class="s4"> </span><span class="s7">=</span><span class="s4"> </span><span class="s1">https://kreha.ru/webhook-test/expedition-location</span><span class="s7">;</span></p>
-<p class="p6"><span class="s12"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s10">const</span><span class="s1"> btn </span><span class="s7">=</span><span class="s1"> document</span><span class="s7">.</span><span class="s1">getElementById</span><span class="s7">(</span><span class="s8">'sendBtn'</span><span class="s7">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s10">const</span><span class="s1"> status </span><span class="s7">=</span><span class="s1"> document</span><span class="s7">.</span><span class="s1">getElementById</span><span class="s7">(</span><span class="s8">'status'</span><span class="s7">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s10">const</span><span class="s1"> title </span><span class="s7">=</span><span class="s1"> document</span><span class="s7">.</span><span class="s1">getElementById</span><span class="s7">(</span><span class="s8">'title'</span><span class="s7">);</span></p>
-<p class="p6"><span class="s12"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>btn</span><span class="s7">.</span><span class="s1">onclick </span><span class="s7">=</span><span class="s1"> </span><span class="s7">()</span><span class="s1"> </span><span class="s7">=&gt;</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>btn</span><span class="s7">.</span><span class="s1">disabled </span><span class="s7">=</span><span class="s1"> </span><span class="s10">true</span><span class="s7">;</span></p>
-<p class="p7"><span class="s4"><span class="Apple-converted-space">            </span>status</span><span class="s7">.</span><span class="s4">innerText </span><span class="s7">=</span><span class="s4"> </span><span class="s1">"Определяю точные координаты GPS..."</span><span class="s7">;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s10">if</span><span class="s1"> </span><span class="s7">(!</span><span class="s1">navigator</span><span class="s7">.</span><span class="s1">geolocation</span><span class="s7">)</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p7"><span class="s4"><span class="Apple-converted-space">                </span>status</span><span class="s7">.</span><span class="s4">innerText </span><span class="s7">=</span><span class="s4"> </span><span class="s1">"Ошибка: Ваше устройство не поддерживает передачу GPS."</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>btn</span><span class="s7">.</span><span class="s1">disabled </span><span class="s7">=</span><span class="s1"> </span><span class="s10">false</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s10">return</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">}</span></p>
-<p class="p6"><span class="s12"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>navigator</span><span class="s7">.</span><span class="s1">geolocation</span><span class="s7">.</span><span class="s1">getCurrentPosition</span><span class="s7">((</span><span class="s1">pos</span><span class="s7">)</span><span class="s1"> </span><span class="s7">=&gt;</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s10">const</span><span class="s1"> data </span><span class="s7">=</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>user_id</span><span class="s7">:</span><span class="s1"> tg</span><span class="s7">.</span><span class="s1">initDataUnsafe</span><span class="s7">.</span><span class="s1">user</span><span class="s7">?.</span><span class="s1">id </span><span class="s7">||</span><span class="s1"> </span><span class="s14">0</span><span class="s7">,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>lat</span><span class="s7">:</span><span class="s1"> pos</span><span class="s7">.</span><span class="s1">coords</span><span class="s7">.</span><span class="s1">latitude</span><span class="s7">,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>lon</span><span class="s7">:</span><span class="s1"> pos</span><span class="s7">.</span><span class="s1">coords</span><span class="s7">.</span><span class="s1">longitude</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">};</span></p>
-<p class="p6"><span class="s12"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>status</span><span class="s7">.</span><span class="s1">innerText </span><span class="s7">=</span><span class="s1"> </span><span class="s8">"Передача данных в штаб n8n..."</span><span class="s7">;</span></p>
-<p class="p6"><span class="s12"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>fetch</span><span class="s7">(</span><span class="s13">WEBHOOK_URL</span><span class="s7">,</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>method</span><span class="s7">:</span><span class="s1"> </span><span class="s8">'POST'</span><span class="s7">,</span></p>
-<p class="p7"><span class="s4"><span class="Apple-converted-space">                    </span>headers</span><span class="s7">:</span><span class="s4"> </span><span class="s7">{</span><span class="s4"> </span><span class="s1">'Content-Type'</span><span class="s7">:</span><span class="s4"> </span><span class="s1">'application/json'</span><span class="s4"> </span><span class="s7">},</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>body</span><span class="s7">:</span><span class="s1"> </span><span class="s13">JSON</span><span class="s7">.</span><span class="s1">stringify</span><span class="s7">(</span><span class="s1">data</span><span class="s7">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">})</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">.</span><span class="s1">then</span><span class="s7">(</span><span class="s1">response </span><span class="s7">=&gt;</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s10">if</span><span class="s1"> </span><span class="s7">(</span><span class="s1">response</span><span class="s7">.</span><span class="s1">ok</span><span class="s7">)</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>status</span><span class="s7">.</span><span class="s1">style</span><span class="s7">.</span><span class="s1">color </span><span class="s7">=</span><span class="s1"> </span><span class="s8">"#4caf50"</span><span class="s7">;</span></p>
-<p class="p7"><span class="s4"><span class="Apple-converted-space">                        </span>status</span><span class="s7">.</span><span class="s4">innerText </span><span class="s7">=</span><span class="s4"> </span><span class="s1">"Координаты успешно сохранены! Хорошей прогулки."</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>title</span><span class="s7">.</span><span class="s1">innerText </span><span class="s7">=</span><span class="s1"> </span><span class="s8">"Готово!"</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>tg</span><span class="s7">.</span><span class="s13">HapticFeedback</span><span class="s7">.</span><span class="s1">notificationOccurred</span><span class="s7">(</span><span class="s8">'success'</span><span class="s7">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>setTimeout</span><span class="s7">(()</span><span class="s1"> </span><span class="s7">=&gt;</span><span class="s1"> tg</span><span class="s7">.</span><span class="s1">close</span><span class="s7">(),</span><span class="s1"> </span><span class="s14">1500</span><span class="s7">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">}</span><span class="s1"> </span><span class="s10">else</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s10">throw</span><span class="s1"> </span><span class="s10">new</span><span class="s1"> </span><span class="s13">Error</span><span class="s7">(</span><span class="s8">'Ошибка сервера'</span><span class="s7">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">})</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">.</span><span class="s10">catch</span><span class="s7">((</span><span class="s1">err</span><span class="s7">)</span><span class="s1"> </span><span class="s7">=&gt;</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>status</span><span class="s7">.</span><span class="s1">style</span><span class="s7">.</span><span class="s1">color </span><span class="s7">=</span><span class="s1"> </span><span class="s8">"#ff5252"</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>status</span><span class="s7">.</span><span class="s1">innerText </span><span class="s7">=</span><span class="s1"> </span><span class="s8">"Ошибка связи: "</span><span class="s1"> </span><span class="s7">+</span><span class="s1"> err</span><span class="s7">.</span><span class="s1">message</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>btn</span><span class="s7">.</span><span class="s1">disabled </span><span class="s7">=</span><span class="s1"> </span><span class="s10">false</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">});</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">},</span><span class="s1"> </span><span class="s7">(</span><span class="s1">err</span><span class="s7">)</span><span class="s1"> </span><span class="s7">=&gt;</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>status</span><span class="s7">.</span><span class="s1">style</span><span class="s7">.</span><span class="s1">color </span><span class="s7">=</span><span class="s1"> </span><span class="s8">"#ff5252"</span><span class="s7">;</span></p>
-<p class="p7"><span class="s4"><span class="Apple-converted-space">                </span>status</span><span class="s7">.</span><span class="s4">innerText </span><span class="s7">=</span><span class="s4"> </span><span class="s1">"Ошибка доступа к GPS. Проверьте разрешения в настройках браузера или Telegram."</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>btn</span><span class="s7">.</span><span class="s1">disabled </span><span class="s7">=</span><span class="s1"> </span><span class="s10">false</span><span class="s7">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">},</span><span class="s1"> </span><span class="s7">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>enableHighAccuracy</span><span class="s7">:</span><span class="s1"> </span><span class="s10">true</span><span class="s7">,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>timeout</span><span class="s7">:</span><span class="s1"> </span><span class="s14">10000</span><span class="s7">,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>maximumAge</span><span class="s7">:</span><span class="s1"> </span><span class="s14">0</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">});</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">};</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+    <div class="container">
+        <h1>🛰 Гео-фиксация</h1>
+        <p>Нажмите кнопку, чтобы отправить свои координаты в журнал экспедиции.</p>
+        <button class="btn" id="sendBtn">ОТПРАВИТЬ GPS</button>
+        <div class="status" id="status">Ожидание нажатия...</div>
+    </div>
+
+    <script>
+        const tg = window.Telegram.WebApp;
+        tg.expand();
+
+        // ВНИМАНИЕ: Замени этот URL на свой адрес Webhook из n8n (Шаг 1)
+        const WEBHOOK_URL = 'ТВОЙ_WEBHOOK_URL_ИЗ_ШАГА_1';
+
+        const btn = document.getElementById('sendBtn');
+        const status = document.getElementById('status');
+
+        btn.onclick = () => {
+            btn.disabled = true;
+            status.innerText = "Определяю местоположение...";
+            
+            navigator.geolocation.getCurrentPosition((pos) => {
+                const data = {
+                    user_id: tg.initDataUnsafe.user?.id || 0,
+                    lat: pos.coords.latitude,
+                    lon: pos.coords.longitude
+                };
+
+                status.innerText = "Передаю данные в n8n...";
+
+                fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                })
+                .then(() => {
+                    status.innerText = "Успешно сохранено! Закрываю окно...";
+                    tg.HapticFeedback.notificationOccurred('success');
+                    setTimeout(() => tg.close(), 1500);
+                })
+                .catch((err) => {
+                    status.innerText = "Ошибка сети: " + err.message;
+                    btn.disabled = false;
+                });
+            }, (err) => {
+                status.innerText = "Ошибка GPS: " + err.message;
+                btn.disabled = false;
+            }, { enableHighAccuracy: true });
+        };
+    </script>
 </body>
 </html>
